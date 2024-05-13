@@ -1,0 +1,85 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/663eb25c505afd78fbcdb6dd
+
+###
+DELETE  http://localhost:3000/api/services/663eb03b3301323cfca5fff3
+
+###
+PUT http://localhost:3000/api/services/663ebb758496359031cad330
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 3 updated",
+    "description": "Alguma descrição tres atualizado",
+    "price": 1455,
+    "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
+
+
+###
+GET http://localhost:3000/api/parties
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "author": "Melky",
+    "description": "Uma festa de aniversário",
+    "budget": 6000,
+    "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição tres",
+            "price": 3450,
+            "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição tres",
+            "price": 4550,
+            "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties/663ff1174ae84a0a3e3b97ce
+
+###
+DELETE  http://localhost:3000/api/parties/663ff3134ae84a0a3e3b97d2
+
+###
+PUT http://localhost:3000/api/parties/663ff1174ae84a0a3e3b97ce
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2 updated",
+    "author": "Melky",
+    "description": "Uma festa de aniversário",
+    "budget": 5000,
+    "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "services": [
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição tres",
+            "price": 3450,
+            "image": "https://images.unsplash.com/photo-1715276611450-c4f735a0f7e6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    ]
+}
